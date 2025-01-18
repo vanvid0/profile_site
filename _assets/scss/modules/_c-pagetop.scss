@@ -1,0 +1,34 @@
+@use '../mixin/mixin' as *;
+@use '../setting/setting' as *;
+
+#pagetop {
+  z-index: 100;
+  a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 62px;
+    background-color: #e9a2af;
+    @include pc {
+      padding: 14.5px 21px;
+    }
+    @include sp {
+      padding: 16px 21px;
+    }
+  }
+  img {
+    transform: rotate(90deg);
+    margin-top: 2px;
+    @include sp {
+      margin-top: 1px;
+    }
+  }
+}
+
+#pagetop:hover {
+  a {
+    @include pc {
+      background-color: #e1647b;
+    }
+  }
+}

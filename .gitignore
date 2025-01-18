@@ -1,0 +1,10 @@
+_gulp/node_modules/
+_gulp/package-lock.json
+_static/dist/
+_server/wp/wp-content/themes/dummy/
+*.map
+#下記は案件に合わせて変更(hogeの箇所を変更想定)
+#_server/wp/wp-content/themes/hoge/img/
+#_server/wp/wp-content/themes/hoge/css/
+#_server/wp/wp-content/themes/hoge/font/
+#_server/wp/wp-content/themes/hoge/js/

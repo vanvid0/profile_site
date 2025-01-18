@@ -1,0 +1,86 @@
+@use '../mixin/mixin' as *;
+@use '../setting/setting' as *;
+
+.paging-area {
+  font-size: 0;
+  padding: 50px 0 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.paging-area > * {
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  color: blue;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin: 0 5px 5px;
+  padding: 0 4px;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  @include pc(){
+    transition: 0.3s;
+    &:not(.dots):hover{
+      background: blue;
+      color: #fff;
+    } 
+  }
+}
+
+.paging-area .back {
+  padding: 0 32px;
+}
+
+.paging-area .page-numbers.current {
+  background: blue;
+  color: #fff;
+}
+
+.paging-area .page-numbers.dots {
+  border-color: transparent;
+  min-width: 1px;
+  margin: 0;
+}
+
+.paging-area .next.page-numbers,
+.paging-area .prev.page-numbers{
+  position: relative;
+}
+
+.paging-area .next.page-numbers:before,
+.paging-area .prev.page-numbers:before{
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/common/ico-arrow-blue.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:100% 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.paging-area .next.page-numbers:hover:before,
+.paging-area .prev.page-numbers:hover:before{
+  background-image: url("../img/common/ico-arrow-wt.svg");
+}
+
+.paging-area .prev.page-numbers:before{
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
