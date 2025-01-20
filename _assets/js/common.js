@@ -204,3 +204,7 @@
   // }
 
 })(jQuery);
+
+var ztxt = new Ztextify("h3", {
+  event: "pointer",
+});

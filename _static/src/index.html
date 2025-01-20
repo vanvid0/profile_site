@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <title>タイトルタイトル</title>
+  <title>プロフィールサイト</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
 
@@ -17,19 +17,76 @@
 
 
 <body>
-<div id="wrapper">
+  <div id="wrapper">
 
-  <!--#include virtual="/inc/header.html" -->
+    <!--#include virtual="/inc/header.html" -->
 
-  <main class="outer-block">
+    <main class="outer-block">
 
-  </main>
+      <section class="p_home-top">
+        <div class="inner-block">
+          <h1 class="p_home-ttl">こんにちは、柘植雅大と申します。<br>エンジニアにを目指す人です。</h1>
 
-  <!--#include virtual="/inc/footer.html" -->
+          <div class="p_home-subttl">
+            <span>駆け出しエンジニアの前の</span>
+            <span>スタート地点より少し前の</span>
+            <span>そんな私。</span>
+          </div>
+        </div>
+      </section>
 
-</div><!-- /wrapper -->
+      <section class="p_home-works">
+        <div class="inner-block">
+          <div class="p_home-works-grid">
+            <div class="p_home-works-img">
+              <img src="/img/common/other (3).JPG" alt="画像">
+            </div>
+            <div class="p_home-works-cap">
+              <h2 class="p_home-works-cap__ttl">これまでのおしごと</h2>
+              <h3 class="p_home-works-cap__subttl">経験したこと</h3>
+              <p class="p_home-works-cap__text">焼き鳥屋と焼き肉屋の2店舗の統括店長として社員、アルバイト含め20名程在籍していました。<br>
+                学生アルバイトを採用するときには、親から預かっていることを意識して立派に成長して卒業してもらいたいという思いで教育をしていました。<br>
+                常連様も多く楽しんでもらえて、焼き肉食べてから焼き鳥屋でお酒を飲んだり、週に10回来店してくれたり。（やっぱりまだ飲みたい！って1日2回来てくれる方もいました！）<br>
+                とはいえ自分ではできないこともたくさんあるので、仲間から提案を受けたり、知恵を貸してもらったりしていっぱい助けてもらいました。良い仲間が集まってくれたおかげもあって、みんなで楽しくお店をやっていました。</p>
 
-<script src="/js/lib/jquery-3.7.1.min.js"></script>
-<script src="/js/common.js"></script>
+            </div>
+          </div>
+          <div class="c-btn" id="js-acordion">もっとみる</div>
+          <div class="p_home-works-grid2">
+            <div class="p_home-works-cap">
+              <h3 class="p_home-works-cap__subttl">おもしろ<br>エピソード</h3>
+              <p class="p_home-works-cap__text">
+                ポテトサラダをフライにしたら美味しいのではないか、とスタッフと真剣に考察しました。味はコショウを強めにしようか、つなぎのマヨネーズの量はどうだろうか。1時間ほど模索していざ、パン粉を付けて揚げてみたら普通のコロッケができてしばらく笑いがとまりませんでした！
+              </p>
+              <h3 class="p_home-works-cap__subttl">飲食店あるある</h3>
+              <p class="p_home-works-cap__text">まかないで麺類を作ると、忙しくなって食べられずに伸びる。<br>
+                いろいろな伸びた麺を食べてきましたが、そばは必ず伸びる前に食べたいです！</p>
+              <h3 class="p_home-works-cap__subttl">学んだこと</h3>
+              <p class="p_home-works-cap__text">自分たちが美味しいと思うものを提供しないと意味がない。<br>
+                お客様が求めることを理解し、それを提供すること。</p>
+            </div>
+            <div class="p_home-works-img">
+              <img src="/img/common/other (3).JPG" alt="画像">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+    </main>
+
+    <!--#include virtual="/inc/footer.html" -->
+
+  </div><!-- /wrapper -->
+  <script src="/js/lib/ztext.min.js"></script>
+  <script src="/js/lib/jquery-3.7.1.min.js"></script>
+  <script src="/js/common.js"></script>
 </body>
+
 </html>
