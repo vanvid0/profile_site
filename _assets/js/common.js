@@ -208,3 +208,41 @@
 var ztxt = new Ztextify("h3", {
   event: "pointer",
 });
+
+class Accordion {
+  constructor(buttonSelector, contentSelector, loadingSelector) {
+    this.button = document.querySelector(buttonSelector);
+    this.content = document.querySelector(contentSelector);
+    this.loading = document.querySelector(loadingSelector);
+
+    if (this.button && this.content && this.loading) {
+      this.init();
+    }
+  }
+
+  init() {
+    this.button.addEventListener('click', () => {
+      this.showContent();
+    });
+  }
+
+  showContent() {
+    // ボタンを非表示
+    this.button.style.display = 'none';
+
+    // ローディングを表示
+    this.loading.style.display = 'block';
+
+    setTimeout(() => {
+      // ローディングを非表示
+      this.loading.style.display = 'none';
+
+      // コンテンツを表示(display:grid;にする)
+      this.content.style.display = 'grid';
+    }, 2000); // 2秒後に処理
+  }
+}
+
+// 複数のインスタンスを作成
+new Accordion('#js-accordion-1', '.p_home-works-grid2-1', '#js-loading-1');
+new Accordion('#js-accordion-2', '.p_home-works-grid2-2', '#js-loading-2');
