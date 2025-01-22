@@ -205,10 +205,27 @@
 
 })(jQuery);
 
-var ztxt = new Ztextify("h3", {
-  event: "pointer",
+//ztext
+var ztxt = new Ztextify("h3,button", {
+  event: "scroll",
+  depth: "2rem",
+  layers: 2,
+  fade: true,
+  direction: "forwards",
+   
 });
 
+//darkmode
+const darkmode = new Darkmode();
+darkmode.showWidget();
+//ボタンをのZ-indexを変更
+document.querySelector('.darkmode-toggle').style.zIndex = 1000;
+ 
+
+
+
+
+//ぐるぐる
 class Accordion {
   constructor(buttonSelector, contentSelector, loadingSelector) {
     this.button = document.querySelector(buttonSelector);
@@ -239,7 +256,7 @@ class Accordion {
 
       // コンテンツを表示(display:grid;にする)
       this.content.style.display = 'grid';
-    }, 2000); // 2秒後に処理
+    }, 800); // 0.8秒後に処理
   }
 }
 

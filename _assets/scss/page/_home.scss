@@ -14,9 +14,9 @@
 
 
 .p_home-ttl {
+  padding-top: 200px;
   font-size: 44px;
   text-align: center;
-  margin-top: 170px;
 }
 
 .p_home-subttl {
@@ -39,6 +39,9 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
+  @include sp {
+    grid-template-columns: 1fr;
+  }
 }
 
 .p_home-works-img {
@@ -56,7 +59,7 @@
   }
 
   &__subttl {
-    color: #5bd;
+    color: $headline_color02;
     text-align: center;
     font-size: 30px;
     margin: 108px auto 0;
@@ -72,11 +75,7 @@
 
 }
 
-.p_home-works-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
-}
+
 
 // .p_home-works-grid2.hidden {
 //    opacity: 0;
@@ -96,6 +95,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+  @include sp {
+    grid-template-columns: 1fr;
+  }
 }
 
 // .p_home-works-grid2.visible {
@@ -114,6 +116,7 @@
 .p_home-future {
  padding-bottom: 100px;
   &__subttl {
+    color: $headline_color02;
     font-size: 30px;
     text-align: center;
     margin-top: 120px;
@@ -130,6 +133,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+  @include sp {
+    grid-template-columns: 1fr;
+  }
 }
 .p_home-portfolio-img {
   margin-top: 120px;
@@ -138,12 +144,12 @@
 
 
 .p_home-portfolio {
-  margin-bottom: 200px;
+  padding-bottom: 100px;
   background-color: $background_color01;
   &__ttl {
     font-size: 40px;
     text-align: center;
-    margin-top: 80px;
+    padding-top: 80px;
   }
 }
 
