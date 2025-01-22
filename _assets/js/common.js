@@ -206,7 +206,7 @@
 })(jQuery);
 
 //ztext
-var ztxt = new Ztextify("h3,button", {
+var ztxt = new Ztextify("h3", {
   event: "scroll",
   depth: "2rem",
   layers: 2,
