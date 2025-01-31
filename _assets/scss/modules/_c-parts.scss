@@ -21,6 +21,7 @@
   }
 }
 .c-center{
+  z-index: 3;
   text-align: center;
 }
 .c-left{
@@ -55,3 +56,4 @@ button.hide {
     transform: rotate(360deg);
   }
 }
+

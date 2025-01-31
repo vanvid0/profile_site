@@ -216,7 +216,29 @@ var ztxt = new Ztextify("h3", {
 });
 
 //darkmode
-const darkmode = new Darkmode();
+const options = {
+  bottom: '32px', // トグルボタンの位置
+  right: '32px',
+  time: '0.5s',
+  label: '🌓',
+  autoMatchOsTheme: true,
+  
+  
+
+  onToggle: (isDarkMode) => {
+    if (isDarkMode) {
+      document.body.classList.add('dark-mode-custom');
+  
+
+      
+    } else {
+      document.body.classList.remove('dark-mode-custom');
+
+    }
+  },
+};
+
+const darkmode = new Darkmode(options);
 darkmode.showWidget();
 //ボタンをのZ-indexを変更
 document.querySelector('.darkmode-toggle').style.zIndex = 1000;
